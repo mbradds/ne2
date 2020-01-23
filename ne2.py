@@ -11,34 +11,39 @@ import sys
 import sqlalchemy
 from sqlalchemy import select,text,Table,MetaData,Column,Integer,String,Date,VARCHAR,NVARCHAR,Float
 from CER import cer_connection
+logging.config.dictConfig({
+    'version': 1,
+    'disable_existing_loggers': True
+})
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
 #%%
 
-def ConfigureLog():
+def ConfigureLog(file_name):
     
     #stdout_handler
-    stdout_handler = logging.StreamHandler(sys.stdout)
-    stdout_handler.setLevel(logging.DEBUG)
-    
+    #stdout_handler = logging.StreamHandler(sys.stdout)
+    #stdout_handler.setLevel(logging.DEBUG)
     #file_handler
-    file_handler = logging.FileHandler(filename=__name__+'.log')
+    file_handler = logging.FileHandler(filename=file_name+'.log')
     file_handler.setLevel(logging.DEBUG)
     
-    handlers = [file_handler,stdout_handler]
+    #handlers = [file_handler,stdout_handler]
+    handlers = file_handler
     
     logging.basicConfig(
+            filename = file_name+'.log',
             level=logging.DEBUG, 
             format='[%(asctime)s] {%(filename)s:%(lineno)d} %(levelname)s - %(message)s',
             handlers=handlers
     )
     
-    log = logging.getLogger(__name__)
+    log = logging.getLogger(file_name)
     
     return(log)
 
 #global logger here
 
-log = ConfigureLog()
+log = ConfigureLog(file_name='settlements')
     
 
 def config_file(login_file = 'login.json'):
@@ -229,6 +234,7 @@ def links(conn,base_link):
 def scrape(conn,link):
         
     link_list,existing,table = links(conn,link)
+    
     if len(link_list)!=0:
         
         if 'settlement' in link:
@@ -245,8 +251,7 @@ def scrape(conn,link):
                 except:
                     None
                     #logger.info('cant get settlement data for '+str(link))
-                
-                
+            
             #save contains all the new data
             if len(settlement_list) != 0:
                 new_data = pd.concat(settlement_list,axis=0,ignore_index=True)
@@ -270,18 +275,18 @@ def main():
             #TODO: add in trade volumes
             None
     
-    logging.shutdown()
     conn.close()
     log.debug('Closed CERSEI connection')
+    logging.shutdown()
    
 #%%       
 if __name__ == "__main__":
-    main()
+   main()
+    
             
 #%%
     
     
-
 
 
 
