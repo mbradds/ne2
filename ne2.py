@@ -11,6 +11,7 @@ import sys
 import sqlalchemy
 from sqlalchemy import select,text,Table,MetaData,Column,Integer,String,Date,VARCHAR,NVARCHAR,Float
 from CER import cer_connection
+from logging import config
 logging.config.dictConfig({
     'version': 1,
     'disable_existing_loggers': True
@@ -23,23 +24,20 @@ def ConfigureLog(file_name):
     #stdout_handler
     #stdout_handler = logging.StreamHandler(sys.stdout)
     #stdout_handler.setLevel(logging.DEBUG)
+    
     #file_handler
-    file_handler = logging.FileHandler(filename=file_name+'.log')
+    l = logging.getLogger(file_name)
+    file_handler = logging.FileHandler(filename=os.getcwd()+'/'+file_name+'.log')
     file_handler.setLevel(logging.DEBUG)
+    file_format = logging.Formatter('[%(asctime)s] {%(filename)s:%(lineno)d} %(levelname)s - %(message)s')
     
+    file_handler.setFormatter(file_format)
     #handlers = [file_handler,stdout_handler]
-    handlers = file_handler
     
-    logging.basicConfig(
-            filename = file_name+'.log',
-            level=logging.DEBUG, 
-            format='[%(asctime)s] {%(filename)s:%(lineno)d} %(levelname)s - %(message)s',
-            handlers=handlers
-    )
+    l.addHandler(file_handler)
     
-    log = logging.getLogger(file_name)
     
-    return(log)
+    return(l)
 
 #global logger here
 
@@ -192,7 +190,7 @@ def links(conn,base_link):
             link = link.replace(old,new)
         
         link_list.append(link)
-            
+    
     return link_list,existing,table
     
 
@@ -249,8 +247,7 @@ def scrape(conn,link):
                     settlement_list.append(df)
                     time.sleep(2) #wait to make sure net energy is not overloaded
                 except:
-                    None
-                    #logger.info('cant get settlement data for '+str(link))
+                    log.info('cant get settlement data for '+str(link))
             
             #save contains all the new data
             if len(settlement_list) != 0:
@@ -270,6 +267,7 @@ def main():
     
     for link in ne2:
         if 'settlement' in link:
+            #link_list,existing,table = links(conn,link)
             scrape(conn,link)
         else:
             #TODO: add in trade volumes
@@ -281,12 +279,10 @@ def main():
    
 #%%       
 if __name__ == "__main__":
-   main()
+    main()
     
             
 #%%
     
-    
-
 
 
