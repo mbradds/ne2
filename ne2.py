@@ -20,30 +20,30 @@ headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleW
 
 def ConfigureLog(file_name):
     
+    l = logging.getLogger()
+    if (l.hasHandlers()):
+        l.handlers.clear()
+        
     #stdout_handler
-    #stdout_handler = logging.StreamHandler(sys.stdout)
-    #stdout_handler.setLevel(logging.DEBUG)
+    stdout_handler = logging.StreamHandler()
+    stdout_handler.setLevel(logging.DEBUG)
+        
     #file_handler
-    file_handler = logging.FileHandler(filename=file_name+'.log')
+    file_handler = logging.FileHandler(file_name)
     file_handler.setLevel(logging.DEBUG)
+        
     
-    #handlers = [file_handler,stdout_handler]
-    handlers = file_handler
+    file_format = logging.Formatter('[%(asctime)s] {%(filename)s:%(lineno)d} %(levelname)s - %(message)s')
+    stdout_handler.setFormatter(file_format)
+    file_handler.setFormatter(file_format)
+    l.addHandler(stdout_handler)
+    l.addHandler(file_handler)
     
-    logging.basicConfig(
-            filename = file_name+'.log',
-            level=logging.DEBUG, 
-            format='[%(asctime)s] {%(filename)s:%(lineno)d} %(levelname)s - %(message)s',
-            handlers=handlers
-    )
+    return l
     
-    log = logging.getLogger(file_name)
-    
-    return(log)
-
 #global logger here
 
-log = ConfigureLog(file_name='settlements')
+log = ConfigureLog(file_name='settlements.log')
     
 
 def config_file(login_file = 'login.json'):
@@ -103,7 +103,7 @@ def CreateTable(name):
                 Column('InstrumentEndDate',Date)
                 )
     else:
-        log.debug('invalid table name for net energy')
+        log.warning('invalid table name for net energy')
                 
     
     meta.create_all(engine)
@@ -116,7 +116,7 @@ def cersei(df,sql_table,conn,new):
     
     if new:
         df.to_sql(sql_table,con=conn,if_exists='append',index=False,chunksize=1000)
-        log.debug('Added: '+str(len(df))+' to new table: '+sql_table)
+        log.warning('Added: '+str(len(df))+' to new table: '+sql_table)
     else:
     
         for index,row in df.iterrows():
@@ -128,7 +128,7 @@ def cersei(df,sql_table,conn,new):
             except:
                 pk_error = pk_error+1
     
-        log.debug('Added: '+str(row_count)+' to: '+sql_table+' '+str(pk_error)+' already in table')
+        log.warning('Added: '+str(row_count)+' to: '+sql_table+' '+str(pk_error)+' already in table')
     
 
 def existing_database_dates(conn,table,col):
@@ -249,24 +249,23 @@ def scrape(conn,link):
                     settlement_list.append(df)
                     time.sleep(2) #wait to make sure net energy is not overloaded
                 except:
-                    None
-                    #logger.info('cant get settlement data for '+str(link))
+                    log.warning('cant get settlement data for '+str(link))
             
             #save contains all the new data
             if len(settlement_list) != 0:
                 new_data = pd.concat(settlement_list,axis=0,ignore_index=True)
                 cersei(new_data,table,conn,existing)
             else:
-                log.debug('Cant insert settlements for: '+'_'.join(link_list))
+                log.warning('Cant insert settlements for: '+'_'.join(link_list))
     else:
-        log.debug('No new settlement links')
+        log.warning('No new settlement links')
 
                    
 def main():
         
     ne2 = ['http://ne2.ca/nedd/exp/settlement-export?username=USERNAME&password=PASSWORD&format=HTML&exchange=no&date=YYYYMMDD']
     conn,engine = cer_connection()
-    log.debug('Opened CERSEI connection')
+    log.warning('Opened CERSEI connection')
     
     for link in ne2:
         if 'settlement' in link:
@@ -276,7 +275,7 @@ def main():
             None
     
     conn.close()
-    log.debug('Closed CERSEI connection')
+    log.warning('Closed CERSEI connection')
     logging.shutdown()
    
 #%%       
