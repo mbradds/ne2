@@ -11,6 +11,7 @@ import sys
 import sqlalchemy
 from sqlalchemy import select,text,Table,MetaData,Column,Integer,String,Date,VARCHAR,NVARCHAR,Float
 from CER import cer_connection
+from logging import config
 logging.config.dictConfig({
     'version': 1,
     'disable_existing_loggers': True
@@ -192,7 +193,7 @@ def links(conn,base_link):
             link = link.replace(old,new)
         
         link_list.append(link)
-            
+    
     return link_list,existing,table
     
 
@@ -269,6 +270,7 @@ def main():
     
     for link in ne2:
         if 'settlement' in link:
+            #link_list,existing,table = links(conn,link)
             scrape(conn,link)
         else:
             #TODO: add in trade volumes
@@ -280,12 +282,10 @@ def main():
    
 #%%       
 if __name__ == "__main__":
-   main()
+    main()
     
             
 #%%
     
-    
-
 
 
