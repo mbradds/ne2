@@ -22,7 +22,7 @@ logging.config.dictConfig({
     'version': 1,
     'disable_existing_loggers': True
 })
-os.chdir('C:/Users/mossgran/Documents/ne2')
+os.chdir('C:/Users/mossgran/Documents/ne2/Data_Scraping')
 import ne2
 from CER import cer_connection
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
