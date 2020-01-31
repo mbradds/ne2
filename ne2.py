@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 import requests
 import sys
 import sqlalchemy
-from sqlalchemy import select,text,Table,MetaData,Column,Integer,String,Date,VARCHAR,NVARCHAR,Float
+from sqlalchemy import select,text,Table,MetaData,Column,Integer,String,Date,VARCHAR,NVARCHAR,Float,DateTime
 from logging import config
 logging.config.dictConfig({
     'version': 1,
@@ -104,10 +104,31 @@ def CreateTable(name):
                 Column('InstrumentStartDate',Date),
                 Column('InstrumentEndDate',Date)
                 )
+    elif name == 'Net_Energy_Volumes':
+        
+        t = Table(
+                name,meta,
+                Column('Ref #',Integer,primary_key=True,autoincrement=False),
+                Column('Market',VARCHAR(50)),
+                Column('Location',VARCHAR(50)),
+                Column('Pipeline',VARCHAR(50)),
+                Column('Index',VARCHAR(50)),
+                Column('Instrument',VARCHAR(50)),
+                Column('Start Date',Date),
+                Column('End Date',Date),
+                Column('Volume',Integer),
+                Column('Trade UOM',VARCHAR(30)),
+                Column('Price',Float(20)),
+                Column('Date/Time',DateTime),
+                Column('Type',VARCHAR(30)),
+                Column('Settlement',VARCHAR(20)),
+                Column('Invoice UOM',VARCHAR(20)),
+                Column('Direct Drive',VARCHAR(20))
+                )
+    
     else:
         log.warning('invalid table name for net energy')
                 
-    
     meta.create_all(engine)
     conn.close()
 
