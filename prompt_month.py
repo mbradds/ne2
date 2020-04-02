@@ -94,14 +94,19 @@ def prompt_test(settle_date,enbridge):
     return spot
 
 
-def spot_calculation(conn,engine):
-    print('pulling nos...')
+def spot_calculation(conn,engine,log):
+    log.warning('pulling nos...')
     enbridge,dates = enbridge_nos(conn)
-    print('pulled nos')
-    print('pulling net energy...')
+    log.warning('pulled nos')
+    log.warning('pulling net energy...')
     df = ne2(conn)
-    max_date = pd.to_datetime(max(df['SettlementDate']))
-    print('pulled net energy')
+    try:
+        max_date = pd.to_datetime(pd.read_sql_query('select max(SettlementDate) from Net_Energy_Spot',con=conn)[''][0])
+    except:
+        max_date = None
+        
+    log.warning(str(max_date))
+    log.warning('pulled net energy')
     delivery_month,first_trade,last_trade,nos = [],[],[],[]
     unique_settle = list(set(list(df['SettlementDate'])))
     spots = {}
@@ -127,14 +132,18 @@ def spot_calculation(conn,engine):
     del df['Delivery Month']
     
     CreateTable('Net_Energy_Spot',conn=conn,engine=engine)
-    df = df[df['SettlementDate']>max_date]
-    if len(df) > 0:    
-        df.to_sql('Net_Energy_Spot',index=False,if_exists='append',con=conn,chunksize=10000)
-        print('Added: '+str(len(df)))
+    if max_date != None:    
+        df = df[df['SettlementDate']>max_date]
+        if_exists = 'append'
     else:
-        print('no new data')
-    
-    #return df
+        if_exists = 'replace'
+        
+        
+    if len(df) > 0:    
+        df.to_sql('Net_Energy_Spot',index=False,if_exists=if_exists,con=conn,chunksize=10000)
+        log.warning('Added: '+str(len(df)))
+    else:
+        log.warning('no new data')
 
 
 if __name__ == "__main__":

@@ -299,11 +299,12 @@ def main():
             #TODO: add in trade volumes
             None
     
-    prompt_month.spot_calculation(conn, engine)
+    df = prompt_month.spot_calculation(conn, engine,log)
     log.warning('completed promt month calculation')
     conn.close()
     log.warning('Closed CERSEI connection')
     logging.shutdown()
+    
    
 #%%       
 if __name__ == "__main__":
@@ -311,6 +312,12 @@ if __name__ == "__main__":
     
             
 #%%
-    
+
+
+
+
+
+
+
 
 
