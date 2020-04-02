@@ -15,20 +15,20 @@ register_matplotlib_converters()
 conversion = 6.2898
 
 
-def Cersei():
+def cersei(table='Net_Energy_Volumes'):
     
     conn,engine = CER.cer_connection()
     
-    df = pd.read_sql_table('Net_Energy_Volumes',conn)
+    df = pd.read_sql_table(table,conn)
     
     conn.close()
     
     return df
     
 
-def Standardize(market_group=False):
+def standardize(market_group=False):
     
-    df = Cersei()
+    df = cersei()
     df['Start Date'] = pd.to_datetime(df['Start Date'])
     df['End Date'] = pd.to_datetime(df['End Date'])
     df['Date/Time'] = pd.to_datetime(df['Date/Time'])
@@ -109,9 +109,9 @@ def Standardize(market_group=False):
     
 if __name__ == "__main__":
     
-    df = Cersei()
-    dfst = Standardize(market_group=False)
-    dfst = Standardize(market_group=True)
+    df = cersei()
+    dfst = standardize(market_group=False)
+    dfst = standardize(market_group=True)
     
     
 #%%

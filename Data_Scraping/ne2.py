@@ -17,6 +17,7 @@ logging.config.dictConfig({
 })
 os.chdir('C:/Users/mossgran/Documents/ne2/Data_Scraping')
 from CER import cer_connection
+import prompt_month
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
 #%%
 
@@ -298,6 +299,8 @@ def main():
             #TODO: add in trade volumes
             None
     
+    prompt_month.spot_calculation(conn, engine)
+    log.warning('completed promt month calculation')
     conn.close()
     log.warning('Closed CERSEI connection')
     logging.shutdown()

@@ -155,6 +155,7 @@ def CerseiVolumes():
     ne2.cersei(df,'Net_Energy_Volumes',conn,new=False)
     
     os.remove('volumes/tradesCSV.csv')    
+    conn.close()
 
 
 if __name__ == "__main__":
