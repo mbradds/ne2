@@ -13,6 +13,7 @@ __pycache__
 *.twbr
 *.pickle
 CER.py
+CER_CONN.py
 .ipynb_checkpoints
 chromedriver.exe
 

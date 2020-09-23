@@ -1,12 +1,11 @@
 import pandas as pd
 import numpy as np
 import json
-from datetime import date,timedelta
+from datetime import date,timedelta,datetime
 import time
 import os
 from os import path
-import ne2volume
-from Documents.ne2.Data_Scraping import CER
+import CER_CONN as CER
 import sqlalchemy
 from sqlalchemy import select,text,Table,MetaData,Column,Integer,String,Date,VARCHAR,NVARCHAR,Float,DateTime
 #%%
@@ -43,15 +42,17 @@ def CreateTable(name,conn):
     return conn
 
 
-def nos():
+def nos(sql=False):
     
     df = pd.read_excel('net_energy_dates.xlsx',sheet_name='nos')
     for col in df.columns:
         if col != 'Year':
             df[col] = pd.to_datetime(df[col],errors='raise')
-    
-    CreateTable('Enbridge_NOS',conn)
-    df.to_sql('Enbridge_NOS',index=False,if_exists='replace',con=conn)
+            
+    if sql:
+        CreateTable('Enbridge_NOS',conn)
+        df.to_sql('Enbridge_NOS',index=False,if_exists='replace',con=conn)
+        
     return df
 
 def holidays():
@@ -66,9 +67,47 @@ def holidays():
     
     return df
 
+def bid_weeks(sql=False):
+    
+    def nos_day(date):
+        valid = False
+        date = date + timedelta(days=1)
+        while not valid:
+            if date.weekday() not in (5,6):
+                valid = True
+            else:
+                date = date + timedelta(days=1)
+                
+        return date
+    
+    
+    df = pd.read_csv('Bid Weeks.csv')
+    for date_col in ['Start Date','End Date']:
+        df[date_col] = pd.to_datetime(df[date_col])
+    
+    df['Bid Week'] = [x.replace('Delivery','01').strip() for x in df['Bid Week']]
+    df['Bid Week'] = [datetime.strptime(x,'%B %Y %d') for x in df['Bid Week']]
+    df['Enbridge Notice of Shipments (NOS)'] = [nos_day(x) for x in df['End Date']]
+    df['Year'] = [x.year for x in df['Start Date']]
+    
+    df = df.rename(columns={'Bid Week':'Delivery Month',
+                            'Start Date':'First Trade',
+                            'End Date':'Last Trade'})
+    
+    if sql:
+        CreateTable('Enbridge_NOS',conn)
+        df.to_sql('Enbridge_NOS',index=False,if_exists='replace',con=conn)
+        
+    return df
+
+
 if __name__ == "__main__":
     
-    
     notice = nos()
-    dates = holidays()
+    #dates = holidays()
+    df = bid_weeks(sql=True)
     conn.close()
+    
+    
+    
+    

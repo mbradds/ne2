@@ -7,7 +7,7 @@ import os
 from os import path
 import matplotlib.pyplot as plt
 from pandas.plotting import register_matplotlib_converters
-from Documents.ne2.Data_Scraping import CER
+import CER
 register_matplotlib_converters()
 #%%
 
