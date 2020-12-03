@@ -1,12 +1,10 @@
 import pandas as pd
 import numpy as np
-import json
 from datetime import date,timedelta,datetime
 import time
 import os
 from os import path
 import CER_CONN as CER
-import sqlalchemy
 from sqlalchemy import select,text,Table,MetaData,Column,Integer,String,Date,VARCHAR,NVARCHAR,Float,DateTime
 #%%
 conn,engine = CER.cer_connection()
@@ -42,21 +40,16 @@ def CreateTable(name,conn):
     return conn
 
 
-def nos(sql=False):
-    
+def nos():
+    #gets the current and post 2018 enbridge dates. These come from net energy and should be accurate
     df = pd.read_excel('net_energy_dates.xlsx',sheet_name='nos')
     for col in df.columns:
         if col != 'Year':
             df[col] = pd.to_datetime(df[col],errors='raise')
             
-    if sql:
-        CreateTable('Enbridge_NOS',conn)
-        df.to_sql('Enbridge_NOS',index=False,if_exists='replace',con=conn)
-        
     return df
 
 def holidays():
-    
     df = pd.read_excel('net_energy_dates.xlsx',sheet_name='holidays')
     df['Observed Holiday or Early Close'] = [' '.join(x.split(' ')[1:]) for x in df['Observed Holiday or Early Close']]
     df['Observed Holiday or Early Close'] = pd.to_datetime(df['Observed Holiday or Early Close'],errors='raise')
@@ -67,8 +60,8 @@ def holidays():
     
     return df
 
-def bid_weeks(sql=False):
-    
+def bid_weeks():
+    #gets the historical (pre 2018) enbridge dates. Some of these dates may be estimates
     def nos_day(date):
         valid = False
         date = date + timedelta(days=1)
@@ -94,18 +87,27 @@ def bid_weeks(sql=False):
                             'Start Date':'First Trade',
                             'End Date':'Last Trade'})
     
+    return df
+
+
+def all_dates(sql=False):
+    current = nos()
+    hist = bid_weeks()
+    hist = hist[hist['Delivery Month']<min(current['Delivery Month'])]
+    df = pd.concat([current,hist],ignore_index=True)
     if sql:
         CreateTable('Enbridge_NOS',conn)
         df.to_sql('Enbridge_NOS',index=False,if_exists='replace',con=conn)
-        
-    return df
+    
+    return None
 
 
 if __name__ == "__main__":
     
-    notice = nos()
+    #current = nos()
     #dates = holidays()
-    df = bid_weeks(sql=True)
+    #historical = bid_weeks(sql=False)
+    all_dates(sql=True)
     conn.close()
     
     

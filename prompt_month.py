@@ -10,7 +10,6 @@ from sqlalchemy import select,text,Table,MetaData,Column,Integer,String,Date,VAR
 
 
 def CreateTable(name,conn,engine):
-    
     meta = MetaData()
     
     if name == 'Net_Energy_Spot':
@@ -35,7 +34,6 @@ def CreateTable(name,conn,engine):
 
 
 def ne2(conn):
-    
     df = pd.read_sql_query('select * from Net_Energy_Settlements',con=conn)
     ins = list(set(list(df['Instrument'])))
     rem = ['/','H','Q','Cal']
@@ -57,19 +55,16 @@ def ne2(conn):
     return df
 
 def enbridge_nos(conn):
-    
     df = pd.read_sql_query('select * from Enbridge_NOS',con=conn)
-    dates = pd.read_sql_query('select * from Canadian_Trade_Holidays',con=conn)
+    #dates = pd.read_sql_query('select * from Canadian_Trade_Holidays',con=conn)
     for col in df.columns:
         if col != 'Year':
             df[col] = pd.to_datetime(df[col])
     
-    return df,dates
+    return df
 
 
 def prompt(settle_date,enbridge):
-    
-
     spot = enbridge.copy()
     spot['Current Settle'] = settle_date
     #spot['Date diff'] = [(last-settle_date).days for last in spot['Last Trade']]
@@ -81,22 +76,19 @@ def prompt(settle_date,enbridge):
     first_trade = spot.loc[0,'First Trade']
     last_trade = spot.loc[0,'Last Trade']
     nos = spot.loc[0,'Enbridge Notice of Shipments (NOS)']
-    
     return [delivery_month,first_trade,last_trade,nos]
 
 def prompt_test(settle_date,enbridge):
-    
     spot = enbridge.copy()
     spot['Current Settle'] = settle_date
     spot['Date diff'] = [(last-settle_date).days for last in spot['Last Trade']]    
     spot = spot.reset_index()
-    
     return spot
 
 
 def spot_calculation(conn,engine,log):
     log.warning('pulling nos...')
-    enbridge,dates = enbridge_nos(conn)
+    enbridge = enbridge_nos(conn)
     log.warning('pulled nos')
     log.warning('pulling net energy...')
     df = ne2(conn)
@@ -148,9 +140,9 @@ def spot_calculation(conn,engine,log):
 
 if __name__ == "__main__":
     
-    #enbridge,dates = enbridge_nos()
+    enbridge = enbridge_nos()
     #test = prompt_test(pd.to_datetime('2020-02-14'),enbridge)
-    spot_calculation()
+    #spot_calculation()
     
 #%%
 

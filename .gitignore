@@ -3,7 +3,6 @@
 __pycache__
 *.json
 *.log
-*.sql
 *.ipynb
 *.csv
 *.xlsx
@@ -12,6 +11,7 @@ __pycache__
 *.twbx
 *.twbr
 *.pickle
+*.pdf
 CER.py
 CER_CONN.py
 .ipynb_checkpoints
