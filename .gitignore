@@ -4,14 +4,11 @@ __pycache__
 *.json
 *.log
 *.ipynb
-*.csv
-*.xlsx
 *.twb
 *.tde
 *.twbx
 *.twbr
 *.pickle
-*.pdf
 CER.py
 CER_CONN.py
 .ipynb_checkpoints

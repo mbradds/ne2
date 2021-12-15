@@ -1,0 +1,426 @@
+Contract Period,Month,Year,Market,Units,Volume
+"(1, 2020)",1,2020,AHS,bbls per day,14256.88
+"(1, 2020)",1,2020,AHS/WCS,bbls per day,6289.799999999999
+"(1, 2020)",1,2020,ARV,bbls per day,14333.333333333334
+"(1, 2020)",1,2020,AWB,bbls per day,111864.09300000004
+"(1, 2020)",1,2020,AWB-Cush,bbls per day,2666.6666666666665
+"(1, 2020)",1,2020,AWB/WCS,bbls per day,51884.979519999986
+"(1, 2020)",1,2020,BK,bbls per day,10000.0
+"(1, 2020)",1,2020,BLS,bbls per day,29000.0
+"(1, 2020)",1,2020,BLS/WTI,bbls per day,29000.0
+"(1, 2020)",1,2020,BRN,bbls per day,16605.072
+"(1, 2020)",1,2020,BRN/WCS,bbls per day,15451.942000000003
+"(1, 2020)",1,2020,BTD,bbls per day,27500.0
+"(1, 2020)",1,2020,Bak-Alex,bbls per day,166.66666666666666
+"(1, 2020)",1,2020,Bak-BL,bbls per day,36597.0
+"(1, 2020)",1,2020,Bak-DAPL,bbls per day,125976.0
+"(1, 2020)",1,2020,Bak-DAPL/BL,bbls per day,2000.0
+"(1, 2020)",1,2020,Bak-Dore,bbls per day,4000.0
+"(1, 2020)",1,2020,Bak-Epp,bbls per day,6740.0
+"(1, 2020)",1,2020,Bak-FOB,bbls per day,22000.0
+"(1, 2020)",1,2020,Bak-Stan,bbls per day,13735.333333333332
+"(1, 2020)",1,2020,Bak-Tren,bbls per day,8500.0
+"(1, 2020)",1,2020,Bak-USGC,bbls per day,83860.00000000001
+"(1, 2020)",1,2020,Bak-USGC/WTI,bbls per day,59000.0
+"(1, 2020)",1,2020,C5+ (CFT),bbls per day,61920.63496666674
+"(1, 2020)",1,2020,C5+ (CPM),bbls per day,104.82999999999998
+"(1, 2020)",1,2020,C5+ (CPR),bbls per day,54930.920000000064
+"(1, 2020)",1,2020,C5+ (CRW),bbls per day,23167.429999999993
+"(1, 2020)",1,2020,CAL,bbls per day,9487.114999999998
+"(1, 2020)",1,2020,CC5,bbls per day,1355.5555555555557
+"(1, 2020)",1,2020,CDB,bbls per day,46586.87131999999
+"(1, 2020)",1,2020,CDB-Cush,bbls per day,3333.3333333333335
+"(1, 2020)",1,2020,CDB-Pat,bbls per day,3333.3333333333335
+"(1, 2020)",1,2020,CDB/WCS,bbls per day,40353.67952
+"(1, 2020)",1,2020,CFT/CPR,bbls per day,1048.3
+"(1, 2020)",1,2020,CHV-Edm,bbls per day,32077.98
+"(1, 2020)",1,2020,CHV-Edm/WCS,bbls per day,32077.98
+"(1, 2020)",1,2020,CL,bbls per day,2000.0
+"(1, 2020)",1,2020,CLK-Cush,bbls per day,10233.333333333334
+"(1, 2020)",1,2020,CLK-Edm,bbls per day,35622.2823
+"(1, 2020)",1,2020,CLK-Edm/WCS,bbls per day,30358.767999999996
+"(1, 2020)",1,2020,CLK-Gulf,bbls per day,4000.0
+"(1, 2020)",1,2020,CLK-Hard,bbls per day,100007.81999999999
+"(1, 2020)",1,2020,CLK-Hard/WCS,bbls per day,84476.2072
+"(1, 2020)",1,2020,CLK-Pat,bbls per day,15238.733333333334
+"(1, 2020)",1,2020,CLK-WR,bbls per day,1600.0
+"(1, 2020)",1,2020,CNX,bbls per day,11531.3
+"(1, 2020)",1,2020,CNX/WCS,bbls per day,8386.4
+"(1, 2020)",1,2020,CS,bbls per day,5333.333333333333
+"(1, 2020)",1,2020,CSH,bbls per day,9333.333333333334
+"(1, 2020)",1,2020,CY,bbls per day,25861.58192090395
+"(1, 2020)",1,2020,DJ Common,bbls per day,25749.333333333332
+"(1, 2020)",1,2020,DSW-Cush,bbls per day,10219.433333333334
+"(1, 2020)",1,2020,DSW-Ned,bbls per day,3333.3333333333335
+"(1, 2020)",1,2020,DSW-WR,bbls per day,7496.0
+"(1, 2020)",1,2020,EPND Space,bbls per day,8090.0
+"(1, 2020)",1,2020,FOS,bbls per day,16709.902
+"(1, 2020)",1,2020,FRB,bbls per day,17527.366339999997
+"(1, 2020)",1,2020,FRB/WCS,bbls per day,9854.02
+"(1, 2020)",1,2020,HTT,bbls per day,5000.0
+"(1, 2020)",1,2020,Hard Lt,bbls per day,4822.179999999999
+"(1, 2020)",1,2020,High Tan-Cush/CLK-Cush,bbls per day,6000.0
+"(1, 2020)",1,2020,KDB-Pat,bbls per day,2000.0
+"(1, 2020)",1,2020,LLB,bbls per day,4193.2
+"(1, 2020)",1,2020,LLB/WCS,bbls per day,4193.2
+"(1, 2020)",1,2020,LLK,bbls per day,21909.469999999998
+"(1, 2020)",1,2020,LLK/WCS,bbls per day,19393.55
+"(1, 2020)",1,2020,LSB,bbls per day,86337.98800000004
+"(1, 2020)",1,2020,LSB-Cush,bbls per day,15929.233333333334
+"(1, 2020)",1,2020,LSW,bbls per day,333.3333333333333
+"(1, 2020)",1,2020,LT SW-Guern,bbls per day,34943.00000000001
+"(1, 2020)",1,2020,Lt SW-WR,bbls per day,1696.0
+"(1, 2020)",1,2020,ML Light Space,bbls per day,3333.3333333333335
+"(1, 2020)",1,2020,Midale,bbls per day,14361.709999999995
+"(1, 2020)",1,2020,NIO-NECL,bbls per day,250.0
+"(1, 2020)",1,2020,PAS,bbls per day,2096.6
+"(1, 2020)",1,2020,PAS/SSP,bbls per day,2096.6
+"(1, 2020)",1,2020,PDH,bbls per day,31449.0
+"(1, 2020)",1,2020,PDH/WCS,bbls per day,31449.0
+"(1, 2020)",1,2020,PSO,bbls per day,16584.105999999992
+"(1, 2020)",1,2020,PSO/CAL,bbls per day,1048.3
+"(1, 2020)",1,2020,PSY,bbls per day,27255.799999999996
+"(1, 2020)",1,2020,PSY/SSP,bbls per day,10483.0
+"(1, 2020)",1,2020,Platte Light Space,bbls per day,1696.0
+"(1, 2020)",1,2020,R,bbls per day,25000.000000000004
+"(1, 2020)",1,2020,R/I,bbls per day,12711.86440677966
+"(1, 2020)",1,2020,SC,bbls per day,3836.7779999999993
+"(1, 2020)",1,2020,SC/WCS,bbls per day,2096.6
+"(1, 2020)",1,2020,SHD,bbls per day,22014.299999999996
+"(1, 2020)",1,2020,SHD/AWB,bbls per day,15724.5
+"(1, 2020)",1,2020,SHD/WCS,bbls per day,2096.6
+"(1, 2020)",1,2020,SHL,bbls per day,10704.4
+"(1, 2020)",1,2020,SMA,bbls per day,10483.0
+"(1, 2020)",1,2020,SMA/WCS,bbls per day,4193.2
+"(1, 2020)",1,2020,SSP,bbls per day,83041.29416
+"(1, 2020)",1,2020,SW,bbls per day,57656.500000000044
+"(1, 2020)",1,2020,SW TMPL App,bbls per day,10482.999999999998
+"(1, 2020)",1,2020,SW-Ker,bbls per day,7023.609999999999
+"(1, 2020)",1,2020,SYN,bbls per day,60801.399999999994
+"(1, 2020)",1,2020,Saddlehorn Space,bbls per day,10704.4
+"(1, 2020)",1,2020,Seal,bbls per day,18554.91
+"(1, 2020)",1,2020,Seal/WCS,bbls per day,15410.009999999998
+"(1, 2020)",1,2020,UHC,bbls per day,59270.0
+"(1, 2020)",1,2020,UHC-Cromer,bbls per day,52028.599999999984
+"(1, 2020)",1,2020,WCB,bbls per day,2096.6
+"(1, 2020)",1,2020,WCB/WCS,bbls per day,2096.6
+"(1, 2020)",1,2020,WCL,bbls per day,8091.666666666667
+"(1, 2020)",1,2020,WCL/WTI,bbls per day,2250.0
+"(1, 2020)",1,2020,WCS,bbls per day,742865.2154000001
+"(1, 2020)",1,2020,WCS-Cush,bbls per day,5000.0
+"(1, 2020)",1,2020,WCS-Pat,bbls per day,13333.333333333334
+"(1, 2020)",1,2020,WCW,bbls per day,40888.88888888888
+"(1, 2020)",1,2020,WDB,bbls per day,25159.199999999997
+"(1, 2020)",1,2020,WDB/WCS,bbls per day,25159.199999999997
+"(1, 2020)",1,2020,WH,bbls per day,16772.8
+"(1, 2020)",1,2020,WH/WCS,bbls per day,16772.8
+"(1, 2020)",1,2020,WTI,bbls per day,117250.00000000001
+"(1, 2020)",1,2020,WTI-Long,bbls per day,4000.0
+"(1, 2020)",1,2020,WTI-MEH,bbls per day,13000.0
+"(1, 2020)",1,2020,WTI-MEH/WTI,bbls per day,13000.0
+"(1, 2020)",1,2020,WTI-Mid,bbls per day,6500.0
+"(1, 2020)",1,2020,WTI-Mid/WTI,bbls per day,6000.0
+"(1, 2020)",1,2020,WTI-Ned,bbls per day,11333.333333333334
+"(1, 2020)",1,2020,WTI-Ned/WTI,bbls per day,8000.0
+"(1, 2020)",1,2020,White Cliffs Space,bbls per day,5975.000000000001
+"(2, 2020)",2,2020,AHS,bbls per day,50767.67142857144
+"(2, 2020)",2,2020,AHS/WCS,bbls per day,42680.78571428572
+"(2, 2020)",2,2020,ARV,bbls per day,7142.857142857143
+"(2, 2020)",2,2020,AWB,bbls per day,78645.63747857144
+"(2, 2020)",2,2020,AWB-Cush,bbls per day,7857.142857142857
+"(2, 2020)",2,2020,AWB/WCS,bbls per day,44477.87142857142
+"(2, 2020)",2,2020,BLS,bbls per day,13000.0
+"(2, 2020)",2,2020,BLS/WTI,bbls per day,13000.0
+"(2, 2020)",2,2020,BRN,bbls per day,25136.736428571432
+"(2, 2020)",2,2020,BRN/WCS,bbls per day,25136.736428571432
+"(2, 2020)",2,2020,Bak-BL,bbls per day,21175.0
+"(2, 2020)",2,2020,Bak-DAPL,bbls per day,128965.0
+"(2, 2020)",2,2020,Bak-Dore,bbls per day,8000.0
+"(2, 2020)",2,2020,Bak-Epp,bbls per day,3000.0
+"(2, 2020)",2,2020,Bak-FOB,bbls per day,10000.0
+"(2, 2020)",2,2020,Bak-JoCo,bbls per day,1000.0
+"(2, 2020)",2,2020,Bak-Pat,bbls per day,7142.857142857143
+"(2, 2020)",2,2020,Bak-Stan,bbls per day,8750.0
+"(2, 2020)",2,2020,Bak-Tren,bbls per day,13500.0
+"(2, 2020)",2,2020,Bak-USGC,bbls per day,82596.0
+"(2, 2020)",2,2020,Bak-USGC/WTI,bbls per day,62703.14285714286
+"(2, 2020)",2,2020,C5+ (CFT),bbls per day,79531.991676322
+"(2, 2020)",2,2020,C5+ (CPR),bbls per day,50767.67142857144
+"(2, 2020)",2,2020,C5+ (CRW),bbls per day,25833.10714285715
+"(2, 2020)",2,2020,CAL,bbls per day,9771.653571428571
+"(2, 2020)",2,2020,CDB,bbls per day,76881.57321428573
+"(2, 2020)",2,2020,CDB-Cush,bbls per day,9642.857142857143
+"(2, 2020)",2,2020,CDB-Gulf,bbls per day,3571.4285714285716
+"(2, 2020)",2,2020,CDB/WCS,bbls per day,63605.6025
+"(2, 2020)",2,2020,CHV-Edm,bbls per day,6739.071428571428
+"(2, 2020)",2,2020,CHV-Edm/WCS,bbls per day,6739.071428571428
+"(2, 2020)",2,2020,CLK-Cush,bbls per day,8214.285714285714
+"(2, 2020)",2,2020,CLK-Edm,bbls per day,36112.88669999999
+"(2, 2020)",2,2020,CLK-Edm/WCS,bbls per day,27065.234035714282
+"(2, 2020)",2,2020,CLK-Gulf,bbls per day,2142.8571428571427
+"(2, 2020)",2,2020,CLK-Hard,bbls per day,48977.998692857145
+"(2, 2020)",2,2020,CLK-Hard/WCS,bbls per day,48977.998692857145
+"(2, 2020)",2,2020,CLK-Pat,bbls per day,1785.7142857142858
+"(2, 2020)",2,2020,CNX,bbls per day,19767.942857142854
+"(2, 2020)",2,2020,CNX/WCS,bbls per day,19767.942857142854
+"(2, 2020)",2,2020,CS,bbls per day,2142.8571428571427
+"(2, 2020)",2,2020,CY,bbls per day,3571.4285714285716
+"(2, 2020)",2,2020,DJ Common,bbls per day,20148.428571428572
+"(2, 2020)",2,2020,DSW-Cush,bbls per day,33714.28571428571
+"(2, 2020)",2,2020,EPND Space,bbls per day,5000.0
+"(2, 2020)",2,2020,FOS,bbls per day,38098.21714285714
+"(2, 2020)",2,2020,FOS/WCS,bbls per day,6289.799999999999
+"(2, 2020)",2,2020,FRB,bbls per day,5862.992142857142
+"(2, 2020)",2,2020,FRB/WCS,bbls per day,3616.6349999999998
+"(2, 2020)",2,2020,HTT,bbls per day,1785.7142857142858
+"(2, 2020)",2,2020,High Tan-Cush/CLK-Cush,bbls per day,8214.285714285714
+"(2, 2020)",2,2020,I,bbls per day,26785.71428571429
+"(2, 2020)",2,2020,LLB,bbls per day,2470.992857142857
+"(2, 2020)",2,2020,LLB/WCS,bbls per day,2246.3571428571427
+"(2, 2020)",2,2020,LLK,bbls per day,27405.55714285714
+"(2, 2020)",2,2020,LLK/WCS,bbls per day,17521.585714285713
+"(2, 2020)",2,2020,LSB,bbls per day,56083.67560714281
+"(2, 2020)",2,2020,LSB-Cush,bbls per day,21214.285714285717
+"(2, 2020)",2,2020,LT SW-Guern,bbls per day,56414.0
+"(2, 2020)",2,2020,MSW-Pat,bbls per day,7142.857142857143
+"(2, 2020)",2,2020,Midale,bbls per day,21789.664285714283
+"(2, 2020)",2,2020,NIO,bbls per day,2000.0
+"(2, 2020)",2,2020,NIO/WTI,bbls per day,2000.0
+"(2, 2020)",2,2020,PDH,bbls per day,31448.999999999996
+"(2, 2020)",2,2020,PDH/WCS,bbls per day,31448.999999999996
+"(2, 2020)",2,2020,PSO,bbls per day,10479.25607142857
+"(2, 2020)",2,2020,PSO/CAL,bbls per day,3369.535714285714
+"(2, 2020)",2,2020,PSY,bbls per day,8985.42857142857
+"(2, 2020)",2,2020,PSY/SSP,bbls per day,4492.714285714285
+"(2, 2020)",2,2020,SC,bbls per day,561.5892857142857
+"(2, 2020)",2,2020,SHC-Laramie,bbls per day,923.7142857142857
+"(2, 2020)",2,2020,SHD,bbls per day,32198.160107142852
+"(2, 2020)",2,2020,SHD-Cush,bbls per day,17857.142857142855
+"(2, 2020)",2,2020,SHD-Hard,bbls per day,2246.3571428571427
+"(2, 2020)",2,2020,SHD/AWB,bbls per day,13478.142857142857
+"(2, 2020)",2,2020,SHD/WCS,bbls per day,6739.0714285714275
+"(2, 2020)",2,2020,SHL,bbls per day,8038.785714285714
+"(2, 2020)",2,2020,SMA,bbls per day,22463.571428571428
+"(2, 2020)",2,2020,SMA/WCS,bbls per day,22463.571428571428
+"(2, 2020)",2,2020,SSP,bbls per day,90528.19285714284
+"(2, 2020)",2,2020,SW,bbls per day,87596.6967857143
+"(2, 2020)",2,2020,SW-Ker,bbls per day,21857.055
+"(2, 2020)",2,2020,SW/SW,bbls per day,8423.839285714284
+"(2, 2020)",2,2020,SYN,bbls per day,73568.19642857143
+"(2, 2020)",2,2020,Saddlehorn Space,bbls per day,8038.785714285714
+"(2, 2020)",2,2020,Seal,bbls per day,2021.7214285714285
+"(2, 2020)",2,2020,UHC,bbls per day,79459.0
+"(2, 2020)",2,2020,UHC-Cromer,bbls per day,19478.14285714286
+"(2, 2020)",2,2020,WCB,bbls per day,2246.3571428571427
+"(2, 2020)",2,2020,WCB/WCS,bbls per day,2246.3571428571427
+"(2, 2020)",2,2020,WCL,bbls per day,3000.0
+"(2, 2020)",2,2020,WCS,bbls per day,798038.81685
+"(2, 2020)",2,2020,WCW,bbls per day,13571.428571428569
+"(2, 2020)",2,2020,WDB,bbls per day,27523.49089285714
+"(2, 2020)",2,2020,WDB/WCS,bbls per day,24709.92857142857
+"(2, 2020)",2,2020,WH,bbls per day,4492.714285714285
+"(2, 2020)",2,2020,WH/WCS,bbls per day,4492.714285714285
+"(2, 2020)",2,2020,WTI,bbls per day,124131.7142857143
+"(2, 2020)",2,2020,WTI-Long,bbls per day,5416.0
+"(2, 2020)",2,2020,WTI-MEH,bbls per day,23571.428571428572
+"(2, 2020)",2,2020,WTI-MEH/WTI,bbls per day,23571.428571428572
+"(2, 2020)",2,2020,WTI-Mid,bbls per day,5000.0
+"(2, 2020)",2,2020,WTI-Mid/WTI,bbls per day,5000.0
+"(2, 2020)",2,2020,WTI-Ned,bbls per day,21357.14285714286
+"(2, 2020)",2,2020,WTI-Ned/WTI,bbls per day,17857.14285714286
+"(2, 2020)",2,2020,White Cliffs Space,bbls per day,3000.0
+"(3, 2020)",3,2020,ARV,bbls per day,8666.666666666668
+"(3, 2020)",3,2020,AWB,bbls per day,6289.8
+"(3, 2020)",3,2020,Bak-BL,bbls per day,1000.0
+"(3, 2020)",3,2020,Bak-DAPL,bbls per day,3000.0
+"(3, 2020)",3,2020,Bak-USGC,bbls per day,20000.0
+"(3, 2020)",3,2020,Bak-USGC/WTI,bbls per day,15000.0
+"(3, 2020)",3,2020,C5+ (CFT),bbls per day,21490.15
+"(3, 2020)",3,2020,C5+ (CPR),bbls per day,6289.799999999999
+"(3, 2020)",3,2020,C5+ (CRW),bbls per day,10483.0
+"(3, 2020)",3,2020,C5+ XApp (CPR),bbls per day,2096.6
+"(3, 2020)",3,2020,CLK-Echo,bbls per day,2066.6666666666665
+"(3, 2020)",3,2020,CLK-Ned,bbls per day,3333.3333333333335
+"(3, 2020)",3,2020,CLK-Pat,bbls per day,4042.333333333333
+"(3, 2020)",3,2020,CS,bbls per day,1800.0
+"(3, 2020)",3,2020,FOS,bbls per day,20965.999999999996
+"(3, 2020)",3,2020,LSB,bbls per day,10483.0
+"(3, 2020)",3,2020,LSW,bbls per day,4000.0
+"(3, 2020)",3,2020,LT SW-Guern,bbls per day,9000.0
+"(3, 2020)",3,2020,Mars,bbls per day,1000.0
+"(3, 2020)",3,2020,Mars/WTI,bbls per day,1000.0
+"(3, 2020)",3,2020,Midale,bbls per day,5241.5
+"(3, 2020)",3,2020,SHD,bbls per day,6289.8
+"(3, 2020)",3,2020,SHD-Cush,bbls per day,10000.0
+"(3, 2020)",3,2020,SHD/AWB,bbls per day,6289.8
+"(3, 2020)",3,2020,SSP,bbls per day,16772.8
+"(3, 2020)",3,2020,SW,bbls per day,40883.7
+"(3, 2020)",3,2020,SW-Ker,bbls per day,8386.4
+"(3, 2020)",3,2020,UHC,bbls per day,12600.0
+"(3, 2020)",3,2020,UHC-Cromer,bbls per day,12000.0
+"(3, 2020)",3,2020,WCS,bbls per day,56608.20000000001
+"(3, 2020)",3,2020,WCW,bbls per day,35166.66666666667
+"(3, 2020)",3,2020,WCW/TMW,bbls per day,2333.3333333333335
+"(3, 2020)",3,2020,WTI,bbls per day,53000.0
+"(3, 2020)",3,2020,WTI-MEH,bbls per day,37000.0
+"(3, 2020)",3,2020,WTI-MEH/WTI,bbls per day,37000.0
+"(3, 2020)",3,2020,WTT,bbls per day,5750.0
+"(4, 2020)",4,2020,ARV,bbls per day,3333.333333333333
+"(4, 2020)",4,2020,Bak-DAPL,bbls per day,5000.0
+"(4, 2020)",4,2020,Bak-FOB,bbls per day,5000.0
+"(4, 2020)",4,2020,C5+ (CFT),bbls per day,174.71666666666664
+"(4, 2020)",4,2020,DAB,bbls per day,2277.7777777777774
+"(4, 2020)",4,2020,LSW,bbls per day,888.8888888888889
+"(4, 2020)",4,2020,LT SW-Guern,bbls per day,2000.0
+"(4, 2020)",4,2020,WCS,bbls per day,2168.8965517241377
+"(4, 2020)",4,2020,WCW,bbls per day,14816.091954022992
+"(4, 2020)",4,2020,WTT,bbls per day,5689.6551724137935
+"(5, 2020)",5,2020,WCW,bbls per day,3000.0
+"(8, 2020)",8,2020,Bak-DAPL,bbls per day,10000.0
+"(8, 2020)",8,2020,C5+ (CFT),bbls per day,1203.2026274421735
+"(8, 2020)",8,2020,C5+ (CPR),bbls per day,171.85245901639342
+"(8, 2020)",8,2020,LSW,bbls per day,123.2876712328767
+"(8, 2020)",8,2020,LT SW-Guern,bbls per day,2000.0
+"(8, 2020)",8,2020,SW,bbls per day,736.8045548247765
+"(8, 2020)",8,2020,WCW,bbls per day,123.2876712328767
+"(8, 2020)",8,2020,WTT,bbls per day,219.78021978021977
+"(11, 2019)",11,2019,AHS,bbls per day,1301.3379310344826
+"(11, 2019)",11,2019,AHS/WCS,bbls per day,1301.3379310344826
+"(11, 2019)",11,2019,AWB,bbls per day,17159.008179310345
+"(11, 2019)",11,2019,BRN,bbls per day,7374.248275862068
+"(11, 2019)",11,2019,BRN/WCS,bbls per day,5639.131034482758
+"(11, 2019)",11,2019,Bak-Alex,bbls per day,500.0
+"(11, 2019)",11,2019,Bak-BL,bbls per day,8509.0
+"(11, 2019)",11,2019,Bak-DAPL,bbls per day,28000.0
+"(11, 2019)",11,2019,Bak-Stan,bbls per day,3768.9655172413795
+"(11, 2019)",11,2019,Bak-USGC,bbls per day,1724.1379310344828
+"(11, 2019)",11,2019,C5+ (CFT),bbls per day,1192.8931034482757
+"(11, 2019)",11,2019,C5+ (CPR),bbls per day,1952.006896551724
+"(11, 2019)",11,2019,C5+ (CRW),bbls per day,9217.810344827585
+"(11, 2019)",11,2019,CLK-Cush,bbls per day,8103.448275862069
+"(11, 2019)",11,2019,CLK-Edm,bbls per day,33617.89655172414
+"(11, 2019)",11,2019,CLK-Edm/WCS,bbls per day,14097.827586206895
+"(11, 2019)",11,2019,CLK-Hard,bbls per day,2282.9805103448275
+"(11, 2019)",11,2019,CLK-Hard/WCS,bbls per day,2282.9805103448275
+"(11, 2019)",11,2019,CLK-Pat,bbls per day,1293.103448275862
+"(11, 2019)",11,2019,CS,bbls per day,6896.551724137931
+"(11, 2019)",11,2019,LLB,bbls per day,216.88965517241377
+"(11, 2019)",11,2019,LSB-Cush,bbls per day,1206.896551724138
+"(11, 2019)",11,2019,LT SW-Guern,bbls per day,13943.827586206897
+"(11, 2019)",11,2019,Midale,bbls per day,542.2241379310344
+"(11, 2019)",11,2019,PSO,bbls per day,867.5586206896551
+"(11, 2019)",11,2019,PSY,bbls per day,7213.749931034482
+"(11, 2019)",11,2019,PSY/SSP,bbls per day,3904.013793103448
+"(11, 2019)",11,2019,SSP,bbls per day,14018.662862068964
+"(11, 2019)",11,2019,SW,bbls per day,281.9565517241379
+"(11, 2019)",11,2019,Seal,bbls per day,433.77931034482754
+"(11, 2019)",11,2019,UHC-Cromer,bbls per day,2168.8965517241377
+"(11, 2019)",11,2019,WCS,bbls per day,65446.8872275862
+"(11, 2019)",11,2019,WDB,bbls per day,6506.689655172413
+"(11, 2019)",11,2019,WDB/WCS,bbls per day,2168.8965517241377
+"(12, 2019)",12,2019,AHS,bbls per day,66640.43099999998
+"(12, 2019)",12,2019,AHS/WCS,bbls per day,33629.464
+"(12, 2019)",12,2019,ARV,bbls per day,3000.0
+"(12, 2019)",12,2019,AWB,bbls per day,103835.37296000004
+"(12, 2019)",12,2019,AWB/CDB,bbls per day,2096.6
+"(12, 2019)",12,2019,AWB/WCS,bbls per day,57898.866959999985
+"(12, 2019)",12,2019,BLS,bbls per day,11000.0
+"(12, 2019)",12,2019,BLS/WTI,bbls per day,11000.0
+"(12, 2019)",12,2019,BRN,bbls per day,32632.530699999992
+"(12, 2019)",12,2019,BRN/WCS,bbls per day,29981.37999999999
+"(12, 2019)",12,2019,BRS,bbls per day,1048.3
+"(12, 2019)",12,2019,Bak-BL,bbls per day,38905.0
+"(12, 2019)",12,2019,Bak-DAPL,bbls per day,70750.0
+"(12, 2019)",12,2019,Bak-DAPL/BL,bbls per day,7000.0
+"(12, 2019)",12,2019,Bak-Dore,bbls per day,14800.0
+"(12, 2019)",12,2019,Bak-Epp,bbls per day,4610.0
+"(12, 2019)",12,2019,Bak-FOB,bbls per day,12000.000000000002
+"(12, 2019)",12,2019,Bak-JoCo,bbls per day,2000.0
+"(12, 2019)",12,2019,Bak-Pat,bbls per day,5000.0
+"(12, 2019)",12,2019,Bak-Stan,bbls per day,26940.659340659342
+"(12, 2019)",12,2019,Bak-Tren,bbls per day,22000.0
+"(12, 2019)",12,2019,Bak-USGC,bbls per day,51310.0
+"(12, 2019)",12,2019,Bak-USGC/WTI,bbls per day,40500.0
+"(12, 2019)",12,2019,C5+ (CFT),bbls per day,16772.799999999996
+"(12, 2019)",12,2019,C5+ (CPM),bbls per day,524.1499999999999
+"(12, 2019)",12,2019,C5+ (CPR),bbls per day,28513.760000000002
+"(12, 2019)",12,2019,C5+ (CRW),bbls per day,26941.309999999998
+"(12, 2019)",12,2019,CAL,bbls per day,1677.2799999999997
+"(12, 2019)",12,2019,CDB,bbls per day,30711.416119999994
+"(12, 2019)",12,2019,CDB/WCS,bbls per day,14256.88
+"(12, 2019)",12,2019,CHV-Edm,bbls per day,21385.319999999996
+"(12, 2019)",12,2019,CHV-Edm/WCS,bbls per day,21385.319999999996
+"(12, 2019)",12,2019,CL,bbls per day,2000.0
+"(12, 2019)",12,2019,CLK-Cush,bbls per day,2000.0
+"(12, 2019)",12,2019,CLK-Edm,bbls per day,53788.27299999999
+"(12, 2019)",12,2019,CLK-Edm/WCS,bbls per day,44028.59999999999
+"(12, 2019)",12,2019,CLK-Gulf,bbls per day,2000.0
+"(12, 2019)",12,2019,CLK-Hard,bbls per day,84586.27870000002
+"(12, 2019)",12,2019,CLK-Hard/WCS,bbls per day,61640.03999999999
+"(12, 2019)",12,2019,CLK-Pat,bbls per day,6666.666666666667
+"(12, 2019)",12,2019,CS,bbls per day,23333.333333333332
+"(12, 2019)",12,2019,CS/CY,bbls per day,13579.234972677597
+"(12, 2019)",12,2019,CSH,bbls per day,26000.0
+"(12, 2019)",12,2019,CSW,bbls per day,1333.3333333333335
+"(12, 2019)",12,2019,CY,bbls per day,6666.666666666667
+"(12, 2019)",12,2019,DJ Common,bbls per day,13154.0
+"(12, 2019)",12,2019,DSW-Cush,bbls per day,1500.0
+"(12, 2019)",12,2019,DSW-WR,bbls per day,21024.0
+"(12, 2019)",12,2019,EPND Space,bbls per day,2385.0
+"(12, 2019)",12,2019,FOS,bbls per day,12055.449999999997
+"(12, 2019)",12,2019,FRB,bbls per day,16772.8
+"(12, 2019)",12,2019,FRB/WCS,bbls per day,6289.799999999999
+"(12, 2019)",12,2019,GSW,bbls per day,500.0
+"(12, 2019)",12,2019,LLB,bbls per day,7673.5560000000005
+"(12, 2019)",12,2019,LLB/WCS,bbls per day,7673.5560000000005
+"(12, 2019)",12,2019,LLK,bbls per day,9539.529999999999
+"(12, 2019)",12,2019,LLK/WCS,bbls per day,6289.799999999999
+"(12, 2019)",12,2019,LSB,bbls per day,41932.000000000044
+"(12, 2019)",12,2019,LSB-Cush,bbls per day,4000.0
+"(12, 2019)",12,2019,LSW,bbls per day,500.0
+"(12, 2019)",12,2019,LT SW-Casper,bbls per day,2000.0
+"(12, 2019)",12,2019,LT SW-Guern,bbls per day,65150.0
+"(12, 2019)",12,2019,Lt SW-WR,bbls per day,812.0
+"(12, 2019)",12,2019,MSB-Cush,bbls per day,4500.0
+"(12, 2019)",12,2019,MXS-Guern,bbls per day,1000.0
+"(12, 2019)",12,2019,Mars,bbls per day,2000.0
+"(12, 2019)",12,2019,Mars/WTI,bbls per day,2000.0
+"(12, 2019)",12,2019,Midale,bbls per day,6488.976999999998
+"(12, 2019)",12,2019,NIO,bbls per day,2000.0
+"(12, 2019)",12,2019,PAS,bbls per day,4193.2
+"(12, 2019)",12,2019,PDH,bbls per day,12579.6
+"(12, 2019)",12,2019,PDH/WCS,bbls per day,10483.0
+"(12, 2019)",12,2019,PSO,bbls per day,11950.619999999997
+"(12, 2019)",12,2019,PSY,bbls per day,7338.1
+"(12, 2019)",12,2019,PSY/SSP,bbls per day,4193.2
+"(12, 2019)",12,2019,SHD,bbls per day,23062.6
+"(12, 2019)",12,2019,SHD/WCS,bbls per day,6289.799999999999
+"(12, 2019)",12,2019,SSP,bbls per day,57634.48570000001
+"(12, 2019)",12,2019,SW,bbls per day,83245.50299999997
+"(12, 2019)",12,2019,SW-Ker,bbls per day,18869.4
+"(12, 2019)",12,2019,SW-Ker/SW,bbls per day,524.15
+"(12, 2019)",12,2019,SW/SW,bbls per day,293.524
+"(12, 2019)",12,2019,SYN,bbls per day,45286.55999999999
+"(12, 2019)",12,2019,SYN/SSP,bbls per day,4193.2
+"(12, 2019)",12,2019,UHC,bbls per day,87098.0
+"(12, 2019)",12,2019,UHC-Cromer,bbls per day,21917.7
+"(12, 2019)",12,2019,WCB,bbls per day,2096.6
+"(12, 2019)",12,2019,WCB/WCS,bbls per day,2096.6
+"(12, 2019)",12,2019,WCS,bbls per day,640723.895239999
+"(12, 2019)",12,2019,WCW,bbls per day,53000.00000000001
+"(12, 2019)",12,2019,WCW/TMW,bbls per day,8666.666666666666
+"(12, 2019)",12,2019,WDB,bbls per day,50802.08561999999
+"(12, 2019)",12,2019,WDB/CDB,bbls per day,3874.93612
+"(12, 2019)",12,2019,WDB/WCS,bbls per day,25961.149499999992
+"(12, 2019)",12,2019,WH,bbls per day,6709.119999999999
+"(12, 2019)",12,2019,WH/WCS,bbls per day,6709.119999999999
+"(12, 2019)",12,2019,WTI,bbls per day,76500.0
+"(12, 2019)",12,2019,WTI-Cra,bbls per day,1192.7
+"(12, 2019)",12,2019,WTI-Cra/WTI-Mid,bbls per day,192.7
+"(12, 2019)",12,2019,WTI-Long,bbls per day,16100.0
+"(12, 2019)",12,2019,WTI-MEH,bbls per day,13000.0
+"(12, 2019)",12,2019,WTI-MEH/WTI,bbls per day,13000.0
+"(12, 2019)",12,2019,WTI-Mid,bbls per day,5692.7
+"(12, 2019)",12,2019,WTI-Mid/WTI,bbls per day,5000.0
+"(12, 2019)",12,2019,WTI-Ned,bbls per day,8000.0
+"(12, 2019)",12,2019,WTI-Ned/WTI,bbls per day,5000.0
