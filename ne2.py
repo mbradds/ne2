@@ -15,7 +15,7 @@ os.chdir('C:/Users/mossgran/Documents/ne2')
 from CER_CONN import cer_connection
 import prompt_month
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
-#%%
+
 
 def ConfigureLog(file_name):
 
@@ -66,6 +66,7 @@ def cast_types_settlement(df):
     df['Instrument'] = df['Instrument'].astype('object')
     return df
 
+
 def cast_types_index(df):
     df['Market'] = df['Market'].astype('object')
     df['Trades'] = pd.to_numeric(df['Trades'], errors = 'coerce')
@@ -78,6 +79,7 @@ def cast_types_index(df):
     df['current date'] = pd.to_datetime(df['current date'], errors='coerce')
     return df
 
+
 def cast_types_trade(df):
     df['Start Date'] = pd.to_datetime(df['Start Date'], errors='coerce')
     df['End Date'] = pd.to_datetime(df['End Date'], errors='coerce')
@@ -85,8 +87,8 @@ def cast_types_trade(df):
     df['Instrument'] = df['Instrument'].astype('object')
     return df
 
-def CreateTable(name):
 
+def CreateTable(name):
     conn,engine = cer_connection()
     meta = MetaData()
 
@@ -129,8 +131,8 @@ def CreateTable(name):
     meta.create_all(engine)
     conn.close()
 
-def cersei(df,sql_table,conn,new):
 
+def cersei(df,sql_table,conn,new):
     row_count = 0
     pk_error = 0
 
@@ -152,7 +154,6 @@ def cersei(df,sql_table,conn,new):
 
 
 def existing_database_dates(conn,table,col):
-
     existing_dates = list(set(list(pd.read_sql('select ('+col+') from '+table,con=conn)[col])))
     existing_dates = [pd.to_datetime(x).date() for x in existing_dates]
 
@@ -161,11 +162,11 @@ def existing_database_dates(conn,table,col):
         return existing_dates,new
     else:
         new = True
-        return [],new
+        return [], new
 
 
 def dates(start=None,end=None):
-        #TODO: take out the first and last date. The last date is out of the 3 month range.
+    #TODO: take out the first and last date. The last date is out of the 3 month range.
     date_list = []
 
     if not start or not end:
@@ -186,7 +187,6 @@ def dates(start=None,end=None):
 
 
 def links(conn,base_link):
-
     #add username and password
     user_name,password,api = config_file()
     base_link = base_link.replace('USERNAME',user_name)
@@ -218,7 +218,6 @@ def links(conn,base_link):
 
 
 #def instrument_type(df):
-#
 #    #TODO: add options for dual half year and dual quarter
 #    types = {'Jan':'Monthly',
 #             'Feb':'Monthly',
@@ -253,15 +252,12 @@ def links(conn,base_link):
 
 
 def scrape(conn, link):
-
     link_list, existing, table = links(conn, link)
 
     if len(link_list)!=0:
-        print("has links")
         settlement_list = []
         for link in link_list:
             try:
-                # df = pd.read_html(link)[0]
                 df = pd.read_csv(link)
                 for delete in ["Product", "Location", "Transportation", "Basis", "Product ID"]:
                     del df[delete]
@@ -279,7 +275,6 @@ def scrape(conn, link):
 
         #save contains all the new data
         if len(settlement_list) != 0:
-            print("has new data")
             new_data = pd.concat(settlement_list,axis=0,ignore_index=True)
             cersei(new_data,table,conn,existing)
             return new_data
@@ -290,8 +285,6 @@ def scrape(conn, link):
 
 
 def main():
-
-    # ne2 = ['http://ne2.ca/nedd/exp/settlement-export?username=USERNAME&password=PASSWORD&format=HTML&exchange=no&date=YYYYMMDD']
     link = "https://dataportal.ne2group.com/Download/SettlementExport/API/YYYY-MM-DD/YYYY-MM-DD"
     conn,engine = cer_connection()
     log.warning('Opened CERSEI connection')
@@ -306,17 +299,5 @@ def main():
     return df
 
 
-#%%
 if __name__ == "__main__":
     df = main()
-
-#%%
-
-
-
-
-
-
-
-
-
